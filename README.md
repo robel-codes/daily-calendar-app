@@ -20,5 +20,5 @@ The app runs in the browser and feature dynamically updated HTML and CSS powered
 
 ## Link to deployed application:
 
-The deployed application [Work Day Scheduler](https://robel-codes.github.io/daily-calendar-app/)
+The deployed application [Daily Calendar App](https://robel-codes.github.io/daily-calendar-app/)
 
