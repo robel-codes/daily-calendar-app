@@ -1,7 +1,7 @@
 $(document).ready(function () {
     //use of day.js
     $("#currentDay").text(dayjs().format("ddd, MMM D, YYYY h:mm A")); 
-    $(".save").on("click", function () {
+    $(".saveBtn").on("click", function () {
         
         console.log(this);
         var value = $(this).siblings(".task").val(); 
