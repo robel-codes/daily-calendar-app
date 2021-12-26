@@ -16,7 +16,7 @@ The app runs in the browser and feature dynamically updated HTML and CSS powered
 
 ## Screenshot of deployed page:
 
-![image](assets/images/)
+![image](assets/images/Planner screenshot.png)
 
 ## Link to deployed application:
 
