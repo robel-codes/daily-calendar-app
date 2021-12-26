@@ -1,6 +1,9 @@
 $(document).ready(function () {
-    //use of day.js
+    //use day.js
+    // the current day and time is displayed at the top of the calendar...
     $("#currentDay").text(dayjs().format("ddd, MMM D, YYYY h:mm A")); 
+
+    //on click event execute save to local storage
     $(".saveBtn").on("click", function () {
         
         console.log(this);
@@ -10,6 +13,7 @@ $(document).ready(function () {
         
         localStorage.setItem(time, value);
     })
+
     //load any saved data from LocalStorage 
     $("#hour9 .task").val(localStorage.getItem("hour9"));
     $("#hour10 .task").val(localStorage.getItem("hour10"));
@@ -22,15 +26,16 @@ $(document).ready(function () {
     $("#hour17 .task").val(localStorage.getItem("hour17"));
     
     function timeTracker() {
-        //get current number of hours.
-        var currentHour = dayjs().hour(); // use of day.js
+        //get current hours
+        //use day.js
+         var currentHour = dayjs().hour();
 
         // loop over time blocks
         $(".time-block").each(function () {
             var blockHour = parseInt($(this).attr("id").split("hour")[1]);
             console.log( blockHour, currentHour)
 
-            //check if we've moved past this time
+            //check if we've moved past this time add the style
             if (blockHour < currentHour) {
                 $(this).addClass("past");
                 $(this).removeClass("future");

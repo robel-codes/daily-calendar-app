@@ -1,7 +1,4 @@
-# daily-calendar-app
-
-# JavaScript-Quiz-App
-
+# Daily-calendar-app
 ## The Repository
 This repository contains a Work day planner that allows you to save events for each hour of the day. The app runs in the browser and feature dynamically updated HTML and CSS powered by jQuery
 ### The Purpose
